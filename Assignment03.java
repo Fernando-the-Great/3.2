@@ -17,17 +17,19 @@ public enum Assignment03 {Admin, Student, Staff, Adam, Scott, Sam, pass123, pass
 		 String[] usernames = { "Adam", "Scott", "Sam"};
 		 String[] passwords = { "pass123", "password", "word123"};
 		 
-	 
+	 //initiates loop
 		while (tries<total) {	 
 		if (tries == total){
 			JOptionPane.showMessageDialog(null, "Contanct administrator");
 			total++; 
 		}
 		else {
+		//Askes for username
 			String uinput = JOptionPane.showInputDialog("Please enter username");
 			for(index=0;index<usernames.length;index++) {
 				System.out.println(uinput);
 			if (uinput.equals(usernames[index])){
+		//askes for password	
 			String pinput = JOptionPane.showInputDialog("Please enter password");
 				
 			if  ( uinput.equals(usernames[index]) && pinput.equals(passwords[index])) {
